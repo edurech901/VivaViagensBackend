@@ -9,7 +9,8 @@ public class Pacote {
     double preco;
     String descricao;
     String imagem;
-    //int tipo; //1 = nacional, 2 = internacional
+    int tipo; //1 = nacional, 2 = internacional
+    int categoria; //1= turismo, 2= aventura, 3=praia, 4=cabana
 
     public Pacote(){}
 
@@ -59,5 +60,21 @@ public class Pacote {
 
     public void setImagem(String imagem) {
         this.imagem = imagem;
+    }
+
+    public int getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(int tipo) {
+        this.tipo = tipo;
+    }
+
+    public int getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(int categoria) {
+        this.categoria = categoria;
     }
 }
